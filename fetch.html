@@ -8,7 +8,7 @@
     <input type="button" value="Fetch" onclick="
         fetch('index.html').then(function(response){
             response.text().then(function(text){
-                alert(text);
+                document.write(text);
             })
         })
     ">
