@@ -9,12 +9,16 @@
 
     </article>
     <input type="button" value="Fetch" onclick="
-        fetch('index.html').then(function(response){
+        /*fetch('index.html').then(function(response){
             response.text().then(function(text){
                 alert(text);
                 document.querySelector('article').innerHTML = text;
             })
-        })
+        })*/
+        function callbackme() {
+            console.log('response end');
+        }
+        fetch('index.html').then(callbackme);
     ">
 </body>
 </html>
